@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hsttlrjeff/node-api-starter"
+    "url": "git://github.com/hsttlrjeff/api-sensors"
   },
   "private": true,
   "dependencies": {
