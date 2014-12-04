@@ -6,9 +6,10 @@ var Temperature = require('../models/temperature');
 var express = require('express');
 var router = express.Router();
 
-router.route('/reading')
+router.route('/reading/temp')
     .post(function(req, res) {
         var tempReading = new Temperature();
+        tempReading.sensorType = req.body.sensorType;
         tempReading.sensorName = req.body.sensorName;
         tempReading.sensorReading = req.body.sensorReading;
         tempReading.humidity = req.body.sensorHumidity;

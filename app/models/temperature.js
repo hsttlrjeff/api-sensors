@@ -5,10 +5,11 @@ var mongoose     = require('mongoose');
 var Schema       = mongoose.Schema;
 
 var TemperatureSchema   = new Schema({
+    sensorType: String,
     sensorName: String,
     sensorReading: Number,
-    updated: Date,
-    humidity: Number
+    humidity: Number,
+    updated: Date
 });
 
 module.exports = mongoose.model('Readings', TemperatureSchema);
